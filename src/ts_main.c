@@ -282,6 +282,7 @@ void Scanner(FILE * fp, BOOL b)
 		presult = grpTopologicalSortL(pg);
 		if (NULL != presult)
 		{
+			strDeleteArrayZ(presult);
 			gbl_parrnd = parrnd;
 			AllTopologicalSorts(pg);
 			wprintf(L"\n");
