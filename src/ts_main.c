@@ -2,6 +2,7 @@
 #include <wchar.h>
 #include <string.h>
 #include <stdlib.h>
+#include <locale.h>
 #include "svstring.h"
 #include "svtree.h"
 #include "svgraph.h"
@@ -303,6 +304,8 @@ int main(int argc, char ** argv)
 {
 	BOOL b = FALSE;
 	FILE * fpin = stdin;
+	
+	setlocale(LC_ALL, "");
 	
 	if (argc >= 2)
 	{
