@@ -134,7 +134,7 @@ void topo_puppet(P_GRAPH_L pgrp, P_SET_T pset, P_DEQUE_DL seq, size_t n)
 	if (FALSE == bfound)
 	{
 		strTraverseLinkedListDC_A(seq->pfirst, NULL, cbftvs_print_seq, 0, FALSE);
-		puts("\n");
+		wprintf(L"\n");
 	}
 }
 
@@ -286,7 +286,6 @@ void Scanner(FILE * fp, BOOL b)
 			strDeleteArrayZ(presult);
 			gbl_parrnd = parrnd;
 			AllTopologicalSorts(pg);
-			wprintf(L"\n");
 		}
 		else
 		{
